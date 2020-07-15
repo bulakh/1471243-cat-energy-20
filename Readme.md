@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Булах](https://up.htmlacademy.ru/adaptive/20/user/1471243).
-* Наставник: `Неизвестно`.
+* Наставник: [Эрик Спичак](https://htmlacademy.ru/profile/id801243).
 
 ---
 
