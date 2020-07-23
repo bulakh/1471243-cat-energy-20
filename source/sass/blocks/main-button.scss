@@ -1,0 +1,18 @@
+.main-button {
+  display: block;
+  padding: 7px 44px;
+  width: 280px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+
+  background-color: $basic-green;
+
+  &--more{
+    color: $special-dark-grey;
+
+    background-color: $basic-grey;
+  }
+}
