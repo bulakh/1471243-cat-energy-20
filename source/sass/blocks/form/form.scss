@@ -1,0 +1,54 @@
+form {
+  font-size: 16px;
+}
+
+.form__legend {
+  margin-bottom: 32px;
+
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__item {
+  margin-bottom: 13px;
+}
+
+.form__label {
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.form__input,
+.form__textarea {
+  padding: 14px;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+
+  border: 1px solid $special-grey-5;
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+}
+
+.form__label--black {
+  color: $black;
+}
+
+.main-button--form {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  outline: none;
+  border: none;
+}

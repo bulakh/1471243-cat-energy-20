@@ -9,7 +9,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img src="../source/img/logo-mobile.svg" width="190" height="38" alt="Логотип интернет-магазина Cat Energy">
     </a>
     <nav class="main-nav">
@@ -19,10 +19,10 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="source/index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="source/catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Подбор программы</a>
@@ -80,11 +80,11 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="form-email">E-mail:*</label>
-              <input class="form__input" type="email" name="email" id="form-email">
+              <input class="form__input" type="email" name="email" id="form-email" placeholder="kuklachev@gmail.com">
             </li>
             <li class="form__item">
               <label class="form__label" for="form-phone">Телефон:*</label>
-              <input class="form__input" type="number" name="phone" id="form-phone">
+              <input class="form__input" type="number" name="phone" id="form-phone" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
         </fieldset>
@@ -97,19 +97,19 @@
           <ul class="form__list">
             <li class="form__item">
               <input class="form__check" type="checkbox" name="sweetener" id="form-sweetener" checked>
-              <label class="form__label" for="form-sweetener">Сахарозаменитель</label>
+              <label class="form__label form__label--black" for="form-sweetener">Сахарозаменитель</label>
             </li>
             <li class="form__item">
               <input class="form__check" type="checkbox" name="water" id="form-water">
-              <label class="form__label" for="form-water">Питьевая вода</label>
+              <label class="form__label form__label--black" for="form-water">Питьевая вода</label>
             </li>
             <li class="form__item">
               <input class="form__check" type="checkbox" name="milk" id="form-milk">
-              <label class="form__label" for="form-milk">Молоко</label>
+              <label class="form__label form__label--black" for="form-milk">Молоко</label>
             </li>
             <li class="form__item">
               <input class="form__check" type="checkbox" name="vitamine" id="form-vitamine">
-              <label class="form__label" for="form-vitamine">Витамины</label>
+              <label class="form__label form__label--black" for="form-vitamine">Витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -123,7 +123,7 @@
 
   <footer class="page-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
-    <div class="page-footer__address address">
+    <div class="page-footer__address address address--grey">
       <b class="address__invite">
         приглашаем к сотрудничеству дилеров!
       </b>

@@ -1,33 +1,26 @@
-@charset 'utf-8';
-
-@import 'fonts';
-@import 'variables';
-@import 'mixins';
-
-@import 'blocks/page';
-@import 'blocks/page-main';
-@import 'blocks/main-button';
-
-@import 'blocks/header/page-header';
-@import 'blocks/header/site-list';
-@import 'blocks/header/main-nav';
-
-@import 'blocks/index/promo';
-@import 'blocks/index/option';
-@import 'blocks/index/function';
-@import 'blocks/index/example';
-
-@import 'blocks/catalog/main-product';
-@import 'blocks/catalog/card-product';
-@import 'blocks/catalog/more-product';
-@import 'blocks/catalog/add-product';
-@import 'blocks/catalog/card-add-product';
-@import 'blocks/catalog/present';
-
-@import 'blocks/form/form';
-
-@import 'blocks/footer/page-footer';
-@import 'blocks/footer/address';
-@import 'blocks/footer/map';
-@import 'blocks/footer/social';
-@import 'blocks/footer/copyright';
+@charset "utf-8";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "blocks/page";
+@import "blocks/page-main";
+@import "blocks/main-button";
+@import "blocks/header/page-header";
+@import "blocks/header/site-list";
+@import "blocks/header/main-nav";
+@import "blocks/index/promo";
+@import "blocks/index/option";
+@import "blocks/index/function";
+@import "blocks/index/example";
+@import "blocks/catalog/main-product";
+@import "blocks/catalog/card-product";
+@import "blocks/catalog/more-product";
+@import "blocks/catalog/add-product";
+@import "blocks/catalog/card-add-product";
+@import "blocks/catalog/present";
+@import "blocks/form/form";
+@import "blocks/footer/page-footer";
+@import "blocks/footer/address";
+@import "blocks/footer/map";
+@import "blocks/footer/social";
+@import "blocks/footer/copyright";

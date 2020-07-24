@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: 'Oswald', 'Verdana', sans-serif;
+  font-family: "Oswald", "Verdana", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
@@ -36,7 +36,9 @@ img {
   height: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 
@@ -54,8 +56,12 @@ p {
   margin: 0;
   padding: 0;
 
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+}
+
+b {
+  font-weight: normal;
 }
