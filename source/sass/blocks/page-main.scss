@@ -1,6 +1,17 @@
+.page-main {
+  margin-bottom: 32px;
+}
+
 .page-main__title {
   margin-bottom: 37px;
 
   font-size: 36px;
   line-height: 36px;
+}
+
+.page-main__subtitle {
+  margin-bottom: 39px;
+
+  font-family: inherit;
+  text-transform: uppercase;
 }

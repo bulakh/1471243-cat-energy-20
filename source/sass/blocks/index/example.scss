@@ -1,0 +1,34 @@
+.example {
+  background-color: $special-grey-4;
+}
+
+.example__title {
+  margin-bottom: 33px;
+
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__list {
+  margin-bottom: 25px;
+}
+
+.example__number {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special-dark-grey;
+}
+
+.example__sum {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

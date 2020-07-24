@@ -9,10 +9,10 @@
   color: $white;
 
   background-color: $basic-green;
+}
 
-  &--more{
-    color: $special-dark-grey;
+.main-button--more {
+  color: $special-dark-grey;
 
-    background-color: $basic-grey;
-  }
+  background-color: $basic-grey;
 }
