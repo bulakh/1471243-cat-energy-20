@@ -1,0 +1,7 @@
+.main-product__wrapper {
+  @media (min-width: $tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+}

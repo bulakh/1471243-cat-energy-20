@@ -1,8 +1,13 @@
 .option__wrapper {
-  margin-bottom: 20px;
   padding: 18px;
+  min-height: 266px;
+  margin-bottom: 30px;
 
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .option__title {
