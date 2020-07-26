@@ -15,3 +15,10 @@
   font-family: inherit;
   text-transform: uppercase;
 }
+
+.page-main__option {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

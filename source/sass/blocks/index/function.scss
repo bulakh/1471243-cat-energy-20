@@ -5,11 +5,33 @@
   line-height: 40px;
 }
 
+.function__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .function__item {
+  min-height: 60px;
+  width: 100%;
   margin-bottom: 24px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+
+  background-color: tomato;
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    min-height: 280px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
 }

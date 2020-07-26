@@ -1,3 +1,17 @@
+.card-product__wrapper {
+  width: 100%;
+  min-height: 206px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
 .card-product__title {
   margin-bottom: 18px;
 
