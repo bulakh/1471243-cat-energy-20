@@ -1,3 +1,17 @@
+.card-add-product {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .card-add-product__title {
   margin-bottom: 13px;
 
@@ -13,4 +27,8 @@
   font-family: "Arial", sans-serif;
   line-height: 14px;
   color: $special-dark-grey;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

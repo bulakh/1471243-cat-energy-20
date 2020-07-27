@@ -1,7 +1,22 @@
 .main-product__wrapper {
   @media (min-width: $tablet-width) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-product__card-product,
+.main-product__more-product {
+  width: 100%;
+  min-height: 206px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }

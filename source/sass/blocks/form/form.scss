@@ -2,6 +2,22 @@ form {
   font-size: 16px;
 }
 
+.form__wrapper--flex,
+.form__list--flex {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form-list--tablet {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .form__legend {
   margin-bottom: 32px;
 
@@ -10,21 +26,32 @@ form {
 }
 
 .form__fieldset {
+  padding: 0;
+
   border: none;
 }
 
+.form__fieldset--target {
+  border: 1px solid $special-grey-5;
+}
+
 .form__item {
+  display: flex;
   margin-bottom: 13px;
 }
 
 .form__label {
+  margin-right: 11px;
+
   text-transform: uppercase;
   color: $special-dark-grey;
 }
 
 .form__input,
 .form__textarea {
+  width: 100%;
   padding: 14px;
+  box-sizing: border-box;
 
   font-family: inherit;
   font-size: inherit;
