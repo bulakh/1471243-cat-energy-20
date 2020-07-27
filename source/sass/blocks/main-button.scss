@@ -1,7 +1,7 @@
 .main-button {
   display: block;
+  width: auto;
   padding: 7px 44px;
-  width: 280px;
 
   font-size: 14px;
   line-height: 18px;
@@ -25,4 +25,15 @@
   color: $special-dark-grey;
 
   background-color: $basic-grey;
+}
+
+.main-button--product {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    min-height: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 40px;
+  }
 }

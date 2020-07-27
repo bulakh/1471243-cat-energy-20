@@ -2,6 +2,30 @@
   background-color: $special-grey-4;
 }
 
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__wrap-text {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__wrap-info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.example__wrap-cat {
+  display: flex;
+  flex-direction: column;
+}
+
 .example__title {
   margin-bottom: 33px;
 
@@ -10,6 +34,7 @@
 }
 
 .example__list {
+  display: flex;
   margin-bottom: 25px;
 }
 
@@ -31,4 +56,13 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__thin-cat {
+  display: none;
+}
+
+.example__button {
+  background-color: transparent;
+  border: none;
 }
