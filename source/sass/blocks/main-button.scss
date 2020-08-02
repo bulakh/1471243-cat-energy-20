@@ -1,7 +1,7 @@
 .main-button {
   display: block;
-  width: auto;
-  padding: 7px 44px;
+  width: 100%;
+  padding: 10px 44px;
 
   font-size: 14px;
   line-height: 18px;
@@ -11,26 +11,36 @@
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
-    width: 248px;
-    min-height: 39px;
-  }
+    width: 244px;
+    min-height: 54px;
+    padding: 0;
+    padding-top: 16px;
 
-  @media (min-width: $desktop-width) {
-    width: 168px;
-    min-height: 40px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .main-button--more {
+  font-size: 16px;
+  width: auto;
   color: $special-dark-grey;
 
   background-color: $basic-grey;
 }
 
 .main-button--product {
+  grid-column: 1 / 3;
+  min-height: 40px;
+
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     width: auto;
     min-height: 38px;
+    padding-top: 10px;
+
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

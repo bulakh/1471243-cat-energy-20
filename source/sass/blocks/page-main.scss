@@ -1,12 +1,16 @@
-.page-main {
-  margin-bottom: 32px;
-}
-
 .page-main__title {
   margin-bottom: 37px;
 
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 83px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .page-main__subtitle {
@@ -16,9 +20,29 @@
   text-transform: uppercase;
 }
 
-.page-main__option {
+.page-main__promo {
+  margin-bottom: 22px;
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 82px;
   }
+}
+
+.page-main__option {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6%;
+    margin-bottom: 71px;
+  }
+}
+
+.page-main__function {
+  margin-bottom: 42px;
 }

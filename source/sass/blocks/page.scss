@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .page {
   min-width: 320px;
   min-height: 100%;
@@ -8,7 +18,7 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: flex-start;
 
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
@@ -61,7 +71,7 @@ p {
   margin: 0;
   padding: 0;
 
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;

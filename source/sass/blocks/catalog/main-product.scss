@@ -12,11 +12,17 @@
   min-height: 206px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+    margin-bottom: 60px;
+
     width: 324px;
-    min-height: 511px;
+    // min-height: 511px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+
     width: 245px;
   }
 }
