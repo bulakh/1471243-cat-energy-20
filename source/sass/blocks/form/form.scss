@@ -1,31 +1,61 @@
 form {
   font-size: 16px;
-}
 
-.form__wrapper--flex,
-.form__list--flex {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
-.form-list--tablet {
+.form__wrapper--grid,
+.form__list--grid {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+
+.form__wrapper--button {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
   }
 }
+
+.form__list--target {
+  padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-left: 28px;
+    padding-bottom: 29px;
+  }
+}
+
 
 .form__legend {
   margin-bottom: 32px;
 
   font-size: 24px;
   line-height: 26px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__legend br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .form__fieldset {
+  margin-bottom: 26px;
   padding: 0;
 
   border: none;
@@ -37,7 +67,22 @@ form {
 
 .form__item {
   display: flex;
+  align-items: center;
   margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__item--contact {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__label {
@@ -45,6 +90,7 @@ form {
 
   text-transform: uppercase;
   color: $special-dark-grey;
+  white-space: nowrap;
 }
 
 .form__input,
@@ -66,16 +112,19 @@ form {
   }
 }
 
+.form__textarea--height {
+  min-height: 150px;
+}
+
 .form__label--black {
   color: $black;
 }
 
-.main-button--form {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.form__text {
+  font-size: 14px;
+  line-height: 16px;
 
-  outline: none;
-  border: none;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

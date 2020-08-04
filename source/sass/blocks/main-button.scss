@@ -47,3 +47,32 @@
     min-height: 40px;
   }
 }
+
+.main-button--product-add {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
+}
+
+.main-button--form {
+  margin-bottom: 21px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  outline: none;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 61px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-right: 81px;
+  }
+}

@@ -3,13 +3,13 @@
 
   font-size: 36px;
   line-height: 36px;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 83px;
 
     font-size: 60px;
     line-height: 60px;
-    text-align: left;
   }
 }
 
@@ -18,6 +18,12 @@
 
   font-family: inherit;
   text-transform: uppercase;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .page-main__promo {
@@ -45,4 +51,43 @@
 
 .page-main__function {
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 205px;
+  }
+}
+
+.page-main__example {
+  padding-top: 27px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 64px;
+  }
+}
+
+.page-main__add-product {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
+}
+
+.page-main__form {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }

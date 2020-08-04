@@ -43,13 +43,15 @@
         Подбор программы
       </h1>
       <p class="page-main__subtitle">
-        Заполните анкету, и мы подберем программу питания для вашего кота
+        Заполните анкету, и мы подберем<br> программу питания для вашего кота
       </p>
     </div>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="form__wrapper form__wrapper--flex container">
+      <div class="form__wrapper form__wrapper--grid container">
         <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Данные кота</legend>
+          <legend class="visually-hidden">
+            Данные кота
+          </legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="form-name">Имя:*</label>
@@ -66,8 +68,10 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--target">
-          <legend class="visually-hidden">Цель кота</legend>
-          <ul class="form__list">
+          <legend class="visually-hidden">
+            Цель кота
+          </legend>
+          <ul class="form__list form__list--target">
             <li class="form__item">
               <input class="form__radio" type="radio" name="weight" value="slim" id="form-slim" checked>
               <label class="form__label" for="form-slim">Похудение</label>
@@ -84,14 +88,16 @@
         </fieldset>
       </div>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <div class="form__wrapper container">
-          <ul class="form__list form__list--flex">
-            <li class="form__item">
+          <legend class="form__legend">
+            Контактные данные<br> (владельца кота)
+          </legend>
+          <ul class="form__list form__list--grid">
+            <li class="form__item form__item--contact">
               <label class="form__label" for="form-email">E-mail:*</label>
               <input class="form__input" type="email" name="email" id="form-email" placeholder="kuklachev@gmail.com">
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--contact">
               <label class="form__label" for="form-phone">Телефон:*</label>
               <input class="form__input" type="number" name="phone" id="form-phone" placeholder="8 (960) 900-60-90">
             </li>
@@ -99,14 +105,18 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Комментарий</legend>
         <div class="form__wrapper container">
-          <textarea class="form__textarea" name="about" id="form-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <legend class="form__legend">
+            Комментарий
+          </legend>
+          <textarea class="form__textarea form__textarea--height" name="about" id="form-text" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Дополнительно</legend>
         <div class="form__wrapper container">
+          <legend class="form__legend">
+            Дополнительно
+          </legend>
           <ul class="form__list form-list--tablet">
             <li class="form__item">
               <input class="form__check" type="checkbox" name="sweetener" id="form-sweetener" checked>
@@ -127,17 +137,15 @@
           </ul>
         </div>
       </fieldset>
-      <div class="form__wrapper container">
+      <div class="form__wrapper form__wrapper--button  container">
         <button class="main-button main-button--form" type="submit">
           Отправить заявку
         </button>
+        <p class="form__text">
+          * — Обязательные поля
+        </p>
       </div>
     </form>
-    <div class="page-main__wrapper container">
-      <p class="form__text">
-        * — Обязательные поля
-      </p>
-    </div>
   </main>
 
   <footer class="page-footer">
