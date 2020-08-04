@@ -1,12 +1,26 @@
 .add-product__wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 79px;
   }
 }
 
 .add-product__wrap {
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+
+    border: 1px solid $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .add-product__card-add-product {
@@ -18,4 +32,10 @@
 
   font-size: 24px;
   line-height: 24px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
