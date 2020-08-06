@@ -34,6 +34,20 @@ form {
   }
 }
 
+.form__list--add {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 103px;
+  }
+}
+
 
 .form__legend {
   margin-bottom: 32px;
