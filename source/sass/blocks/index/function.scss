@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 230px 230px 230px 230px;
-    gap: 72px;
+    grid-template-columns: repeat(4, 230px);
+    justify-content: space-between;
   }
 }
 
@@ -53,12 +53,34 @@
   width: 60px;
   height: 60px;
 
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
   }
+}
+
+.function__item--leaf::before {
+  background-image: url("../img/icon-leaf.svg");
+  background-size: 30px 32px;
+}
+
+.function__item--powder::before {
+  background-image: url("../img/icon-powder.svg");
+  background-size: 29px 31px;
+}
+
+.function__item--eat::before {
+  background-image: url("../img/icon-eat.svg");
+  background-size: 23px 30px;
+}
+
+.function__item--clock::before {
+  background-image: url("../img/icon-clock.svg");
+  background-size: 32px 33px;
 }
 
 @media (min-width: $tablet-width) {

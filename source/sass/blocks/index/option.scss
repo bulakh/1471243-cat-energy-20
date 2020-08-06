@@ -16,15 +16,17 @@
 
 .option__wrapper::after {
   position: absolute;
-  top: 10px;
-  left: 8%;
+  top: 21px;
+  left: 22px;
 
   content: "";
   width: 50px;
   height: 53px;
 
-  background-color: tomato;
-  border-radius: 50%;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     top: 22%;
@@ -45,19 +47,51 @@
   }
 }
 
+.option__wrapper--pro::after {
+  top: 24px;
+  left: 13px;
+
+  width: 67px;
+  height: 50px;
+
+  background-image: url("../img/icon-cat-pro.svg");
+  background-position: center;
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    top: 22%;
+    right: 7%;
+    left: auto;
+
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 44px;
+    left: 5%;
+    right: auto;
+
+    width: 134px;
+    height: 100px;
+  }
+}
+
 .option__title {
   margin-bottom: 29px;
+  margin-left: 73px;
 
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+    margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
-    text-align: left;
   }
 
   @media (min-width: $desktop-width) {

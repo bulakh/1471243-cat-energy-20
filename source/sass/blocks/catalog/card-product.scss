@@ -61,3 +61,16 @@
   justify-content: space-between;
   margin-bottom: 14px;
 }
+
+.card-product__img {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-top: -76px;
+  }
+}
+
+.card-product__img--big {
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+}
