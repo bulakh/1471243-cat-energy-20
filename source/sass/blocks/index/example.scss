@@ -6,13 +6,13 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    margin-top: -150px;
+    margin-top: -188px;
   }
 }
 
 .example__wrap-text {
   @media (min-width: $tablet-width) {
-    margin-top: -455px;
+    margin-top: -585px;
   }
 
   @media (min-width: $desktop-width) {
@@ -170,8 +170,20 @@
   }
 }
 
+// Cats
+
+.example__fat-cat {
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+}
+
 .example__thin-cat {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
 }
 
 // Scale and buttons
