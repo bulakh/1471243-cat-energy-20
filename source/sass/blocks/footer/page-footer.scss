@@ -11,7 +11,8 @@
   @media (min-width: $tablet-width) {
     height: 146px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
     justify-content: space-between;
     align-items: baseline;
   }
@@ -32,8 +33,5 @@
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 22px;
 }
