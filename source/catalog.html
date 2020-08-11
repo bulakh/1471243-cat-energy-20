@@ -12,7 +12,7 @@
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__top-wrap">
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="/img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
@@ -380,6 +380,10 @@
           </article>
           <article class="main-product__more-product more-product">
             <div class="more-product__wrapper">
+              <svg class="more-product__icon" img="role" width="30" height="30" aria-hidden="true" focusable="false">
+                <use class="more-product__plus-mobile" xlink:href="/img/sprite.svg#plus-mobile"></use>
+                <use class="more-product__plus" xlink:href="/img/sprite.svg#plus"></use>
+              </svg>
               <h3 class="more-product__title">
                 Показать еще<br> 100500 товаров
               </h3>
@@ -449,6 +453,9 @@
           </article>
         </div>
         <div class="add-products__present present">
+          <svg class="present__icon" img="role" width="78" height="80" aria-hidden="true" focusable="false">
+            <use xlink:href="/img/sprite.svg#present"></use>
+          </svg>
           <p class="present__text">
             Закажите все и получите чехол для кота в подарок!
           </p>
@@ -469,32 +476,34 @@
     </div>
     <iframe class="page-footer__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595251621696!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo logo-text">
-        <img src="/img/logo-footer.svg" width="128" height="24" alt="Главная страница Cat Energy">
+      <a class="page-footer__logo logo-text" href="index.html" aria-label="Главная страница">
+        <svg role="img" width="128" height="24">
+          <use xlink:href="/img/sprite.svg#logo-footer"></use>
+        </svg>
       </a>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Давайте дружить!</h2>
         <div class="social__wrapper">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="#">
-                <span class="visually-hidden">
-                  Мы вконтакте!
-                </span>
+              <a class="social__link social__link--vk" href="#" aria-label="Подписывайтесь на нас Вконтакте!">
+                <svg class="social__icon" img="role" width="22" height="12" focusable="false">
+                  <use xlink:href="/img/sprite.svg#vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--insta" href="#">
-                <span class="visually-hidden">
-                  Мы в инстаграмме!
-                </span>
+              <a class="social__link social__link--insta" href="#" aria-label="Подписывайтесь на нас в Инстаграме!">
+                <svg class="social__icon" img="role" width="16.1" height="16" focusable="false">
+                  <use xlink:href="/img/sprite.svg#insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="#">
-                <span class="visually-hidden">
-                  Мы в фейсбуке!
-                </span>
+              <a class="social__link social__link--fb" href="#" aria-label="Подписывайтесь на нас в Фейсбуке!">
+                <svg class="social__icon" img="role" width="10" height="19" focusable="false">
+                  <use xlink:href="/img/sprite.svg#fb"></use>
+                </svg>
               </a>
             </li>
           </ul>

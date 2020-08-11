@@ -14,19 +14,13 @@
   }
 }
 
-.option__wrapper::after {
+.option__slim {
   position: absolute;
   top: 21px;
   left: 22px;
 
-  content: "";
   width: 50px;
   height: 53px;
-
-  background-image: url("../img/icon-cat-slim.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     top: 22%;
@@ -47,20 +41,17 @@
   }
 }
 
-.option__wrapper--pro::after {
+.option__pro {
+  position: absolute;
   top: 24px;
   left: 13px;
 
   width: 67px;
   height: 50px;
 
-  background-image: url("../img/icon-cat-pro.svg");
-  background-position: center;
-  background-size: 100%;
-
   @media (min-width: $tablet-width) {
     top: 22%;
-    right: 7%;
+    right: 4%;
     left: auto;
 
     width: 268px;
@@ -136,6 +127,8 @@
 }
 
 .option__link {
+  position: relative;
+
   display: block;
 
   font-size: 16px;
@@ -145,5 +138,19 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.option__arrow {
+  position: absolute;
+  top: 2px;
+  left: 105px;
+
+  width: 24px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: 132px;
   }
 }

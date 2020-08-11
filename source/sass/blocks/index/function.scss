@@ -28,7 +28,7 @@
   width: 100%;
   margin-bottom: 24px;
 
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
@@ -47,14 +47,13 @@
   }
 }
 
-.function__item::before {
-  content: "";
-  display: block;
+.function__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
 
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
@@ -63,25 +62,6 @@
   }
 }
 
-.function__item--leaf::before {
-  background-image: url("../img/icon-leaf.svg");
-  background-size: 30px 32px;
-}
-
-.function__item--powder::before {
-  background-image: url("../img/icon-powder.svg");
-  background-size: 29px 31px;
-}
-
-.function__item--eat::before {
-  background-image: url("../img/icon-eat.svg");
-  background-size: 23px 30px;
-}
-
-.function__item--clock::before {
-  background-image: url("../img/icon-clock.svg");
-  background-size: 32px 33px;
-}
 
 @media (min-width: $tablet-width) {
   .function__item::after {
