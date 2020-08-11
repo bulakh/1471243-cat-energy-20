@@ -1,5 +1,14 @@
 .page-header {
   margin-top: 11px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 91px;
+  }
 }
 
 .page-header__wrapper {
@@ -9,6 +18,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    align-items: center;
     gap: 64px;
   }
 
@@ -23,21 +33,9 @@
   align-items: flex-start;
 }
 
-.page-header__logo {
-  height: 66px;
-
-  @media (min-width: $tablet-width) {
-    height: 98px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 165px;
-  }
-}
-
 .page-header__toggle {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   margin-top: 10px;
 
   background-repeat: no-repeat;
