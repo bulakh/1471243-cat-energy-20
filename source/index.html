@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин функционального питания для котов "Cat Energy"</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -14,9 +14,9 @@
       <div class="page-header__top-wrap">
         <a class="page-header__logo logo" aria-label="Логотип магазина Cat Energy">
           <svg class="logo__icon" img="role" width="190" height="38">
-            <use class="logo__mobile" xlink:href="/img/logo-sprite.svg#mobile"></use>
-            <use class="logo__tablet" xlink:href="/img/logo-sprite.svg#tablet"></use>
-            <use class="logo__desktop" xlink:href="/img/logo-sprite.svg#desktop"></use>
+            <use class="logo__mobile" xlink:href="/img/sprite.svg#logo-mobile"></use>
+            <use class="logo__tablet" xlink:href="/img/sprite.svg#logo-tablet"></use>
+            <use class="logo__desktop" xlink:href="/img/sprite.svg#logo-desktop"></use>
           </svg>
         </a>
         <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
@@ -53,9 +53,9 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="/img/webp/index-can-desktop@1x.webp 1x, /img/webp/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="/img/webp/index-can-tablet@1x.webp 1x, /img/webp/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="/img/webp/index-can-mobile@1x.webp 1x, /img/webp/index-can-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="/img/index-can-desktop@1x.webp 1x, /img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="/img/index-can-tablet@1x.webp 1x, /img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="/img/index-can-mobile@1x.webp 1x, /img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="/img/index-can-desktop@1x.png 1x, /img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="/img/index-can-tablet@1x.jpg 1x, /img/index-can-tablet@2x.jpg 2x">
           <img class="promo__img" src="/img/index-can-mobile@1x.png" srcset="/img/index-can-mobile@2x.png 2x"  width="280" height="270" alt="Cat Energy Pro с курицей">
@@ -69,7 +69,7 @@
     <section class="page-main__option option container">
       <div class="option__wrapper">
         <svg class="option__slim" img="role" width="50" height="53" aria-hidden="true" focusable="false">
-          <use xlink:href="/img/sprite.svg#cat-slim"></use>
+          <use xlink:href="/img/sprite.svg#icon-cat-slim"></use>
         </svg>
         <h3 class="option__title">
           похудение
@@ -80,13 +80,13 @@
         <a class="option__link" href="source/catalog.html" aria-label="Каталог товаров для похудения">
           каталог slim
           <svg class="option__arrow" img="role" width="24" height="12" aria-hidden="true" focusable="false">
-            <use xlink:href="/img/sprite.svg#right-arrow"></use>
+            <use xlink:href="/img/sprite.svg#icon-right-arrow-long"></use>
           </svg>
         </a>
       </div>
       <div class="option__wrapper">
         <svg class="option__pro" img="role" width="67" height="50" aria-hidden="true" focusable="false">
-          <use xlink:href="/img/sprite.svg#cat-pro"></use>
+          <use xlink:href="/img/sprite.svg#icon-cat-pro"></use>
         </svg>
         <h3 class="option__title">
           набор массы
@@ -97,7 +97,7 @@
         <a class="option__link" href="source/catalog.html" aria-label="Каталог товаров для набора массы">
           каталог pro
           <svg class="option__arrow" img="role" width="24" height="12" aria-hidden="true" focusable="false">
-            <use xlink:href="/img/sprite.svg#right-arrow"></use>
+            <use xlink:href="/img/sprite.svg#icon-right-arrow-long"></use>
           </svg>
         </a>
       </div>
@@ -112,7 +112,7 @@
           <li class="function__item function__item--leaf">
             <div class="function__icon-wrap">
               <svg class="function__icon" img="role" width="30" height="32" aria-hidden="true" focusable="false">
-                <use xlink:href="/img/sprite.svg#leaf"></use>
+                <use xlink:href="/img/sprite.svg#icon-leaf"></use>
               </svg>
             </div>
             Функциональное питание содержит только полезные питательные вещества.
@@ -120,7 +120,7 @@
           <li class="function__item function__item--powder">
             <div class="function__icon-wrap">
               <svg class="function__icon" img="role" width="29" height="31" aria-hidden="true" focusable="false">
-                <use xlink:href="/img/sprite.svg#powder"></use>
+                <use xlink:href="/img/sprite.svg#icon-powder"></use>
               </svg>
             </div>
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
@@ -128,7 +128,7 @@
           <li class="function__item function__item--eat">
             <div class="function__icon-wrap">
               <svg class="function__icon" img="role" width="23" height="30" aria-hidden="true" focusable="false">
-                <use xlink:href="/img/sprite.svg#eat"></use>
+                <use xlink:href="/img/sprite.svg#icon-eat"></use>
               </svg>
             </div>
             Замените один-два приема обычной еды на наше функциональное питание.
@@ -136,7 +136,7 @@
           <li class="function__item function__item--clock">
             <div class="function__icon-wrap">
               <svg class="function__icon" img="role" width="32" height="33" aria-hidden="true" focusable="false">
-                <use xlink:href="/img/sprite.svg#clock"></use>
+                <use xlink:href="/img/sprite.svg#icon-clock"></use>
               </svg>
             </div>
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
@@ -172,17 +172,17 @@
         </div>
         <div class="example__wrap-cat">
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="/img/webp/before-desktop@1x.webp 1x, /img/webp/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="/img/webp/before-tablet@1x.webp 1x, /img/webp/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="/img/webp/before-mobile@1x.webp 1x, /img/webp/before-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="/img/before-desktop@1x.webp 1x, /img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="/img/before-tablet@1x.webp 1x, /img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="/img/before-mobile@1x.webp 1x, /img/before-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="/img/before-desktop@1x.png 1x, /img/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/before-tablet@1x.png 1x, /img/before-tablet@2x.png 2x">
             <img class="example__fat-cat" src="/img/before-mobile@1x.png" srcset="/img/before-mobile@2x.png 2x" width="311" height="232"  alt="Мой толстый кот">
           </picture>
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="/img/webp/after-desktop@1x.webp 1x, /img/webp/after-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="/img/webp/after-tablet@1x.webp 1x, /img/webp/after-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="/img/webp/after-mobile@1x.webp 1x, /img/webp/after-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="/img/after-desktop@1x.webp 1x, /img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="/img/after-tablet@1x.webp 1x, /img/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="/img/after-mobile@1x.webp 1x, /img/after-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="/img/after-desktop@1x.png 1x, /img/after-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="/img/after-tablet@1x.png 1x, /img/after-tablet@2x.png 2x">
             <img class="example__thin-cat" src="/img/after-mobile@1x.png" srcset="/img/after-mobile@2x.png 2x" width="311" height="232"  alt="Мой стройный кот">
@@ -227,21 +227,21 @@
             <li class="social__item">
               <a class="social__link social__link--vk" href="#" aria-label="Подписывайтесь на нас Вконтакте!">
                 <svg class="social__icon" img="role" width="22" height="12" focusable="false">
-                  <use xlink:href="/img/sprite.svg#vk"></use>
+                  <use xlink:href="/img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--insta" href="#" aria-label="Подписывайтесь на нас в Инстаграме!">
                 <svg class="social__icon" img="role" width="16.1" height="16" focusable="false">
-                  <use xlink:href="/img/sprite.svg#insta"></use>
+                  <use xlink:href="/img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--fb" href="#" aria-label="Подписывайтесь на нас в Фейсбуке!">
                 <svg class="social__icon" img="role" width="10" height="19" focusable="false">
-                  <use xlink:href="/img/sprite.svg#fb"></use>
+                  <use xlink:href="/img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -252,7 +252,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           HTML Academy
           <svg class="copyright__icon" role="img" width="27" height="34">
-            <use xlink:href="/img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="/img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
