@@ -1,0 +1,36 @@
+.radio {
+  margin-bottom: 19px;
+}
+
+.radio__text {
+  margin-left: 50px;
+
+  cursor: pointer;
+}
+
+.radio__custom {
+  position: absolute;
+  top: -6px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 1px solid $special-grey;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio__input:checked + .radio__custom {
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Ccircle cx='7' cy='7' fill='%2368B738' r='4'/%3E%3C/svg%3E");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Ccircle cx='7' cy='7' fill='%2368B738' r='3.5'/%3E%3C/svg%3E");
+  }
+}

@@ -7,11 +7,12 @@ const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const sync = require("browser-sync").create();
-const posthtml = require("gulp-posthtml");
-const include = require("posthtml-include");
+const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
 const del = require("del");
 
 
@@ -29,7 +30,6 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**.{jpg,png,webp}",
-    "source/js/**/*.js",
     "source/*.ico"
   ], {
     base: "source"
@@ -78,12 +78,24 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("htmlMin")).on("change", sync.reload);
 }
 
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// JS-min
+
+const compress = () => {
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
+  );
+}
+
+exports.compress = compress;
 
 // Sprite
 
@@ -96,17 +108,15 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-// Html
+// Html-min
 
-const html = () => {
+const htmlMin = () => {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
-exports.html = html;
+exports.htmlMin = htmlMin;
 
 // Image
 
@@ -137,9 +147,10 @@ exports.imgWebp = imgWebp;
 const build =  gulp.series(
     clean,
     copy,
+    compress,
     styles,
     sprite,
-    html
+    htmlMin
   );
 
   exports.build = build;

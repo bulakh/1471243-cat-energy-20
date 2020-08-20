@@ -1,4 +1,4 @@
-form {
+.form {
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,12 @@ form {
 }
 
 .form__fieldset--target {
-  border: 1px solid $special-grey-5;
+  border-top: 1px solid $special-grey-6;
+  border-bottom: 1px solid $special-grey-6;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special-grey-5;
+  }
 }
 
 .form__item {
@@ -109,6 +114,10 @@ form {
   white-space: nowrap;
 }
 
+.form__label-wrap {
+  position: relative;
+}
+
 .form__input,
 .form__textarea {
   width: 100%;
@@ -132,7 +141,7 @@ form {
   min-height: 150px;
 }
 
-.form__label--black {
+.form__label--add {
   color: $black;
 }
 
@@ -176,4 +185,13 @@ form {
   @media (min-width: $desktop-width) {
     top: 15px;
   }
+}
+
+.form__radio,
+.form__check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
