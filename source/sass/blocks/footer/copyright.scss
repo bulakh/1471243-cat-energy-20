@@ -9,8 +9,16 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 155px;
+    width: 164px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: $basic-green;
 }
 
 .copyright__icon {

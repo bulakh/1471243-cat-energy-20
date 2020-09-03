@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--other-page page-header--form">
     <div class="page-header__wrapper container">
       <div class="page-header__top-wrap">
         <a class="page-header__logo logo" href="index.html" aria-label="Логотип магазина Cat Energy">
@@ -24,30 +24,28 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--black" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--black" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active site-list__item--active-other-page">
+            <a class="site-list__link site-list__link--black">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main class="page-main">
     <div class="container">
-      <h1 class="page-main__title">
+      <h1 class="page-main__title page-main__title--form">
         Подбор программы
       </h1>
-      <p class="page-main__subtitle">
+      <p class="page-main__subtitle page-main__subtitle--form">
         Заполните анкету, и мы подберем<br> программу питания для вашего кота
       </p>
     </div>
@@ -63,12 +61,12 @@
               <input class="form__input" type="text" name="name" id="form-name" placeholder="Барсик" required>
             </li>
             <li class="form__item">
-              <label class="form__label" for="form-weight">Вес(кг):*</label>
-              <input class="form__input" type="number" name="wight" id="form-weight" placeholder="7" required>
+              <label class="form__label" for="form-weight">Вес (кг):*</label>
+              <input class="form__input form__input--number" type="number" name="wight" id="form-weight" placeholder="7" required>
             </li>
             <li class="form__item">
-              <label class="form__label" for="form-years">Возраст(лет):</label>
-              <input class="form__input" type="number" name="years" id="form-years" placeholder="7">
+              <label class="form__label" for="form-years">Возраст (лет):</label>
+              <input class="form__input form__input--number" type="number" name="years" id="form-years" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -102,21 +100,21 @@
         </fieldset>
       </div>
       <div class="form__wrapper container">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">
+        <fieldset class="form__fieldset form__fieldset--contact">
+          <legend class="form__legend form__legend--line form__legend--contact">
             Контактные данные<br> (владельца кота)
           </legend>
           <ul class="form__list form__list--grid">
             <li class="form__item form__item--contact">
               <label class="form__label" for="form-email">E-mail:*</label>
-              <input class="form__input" type="email" name="email" id="form-email" placeholder="kuklachev@gmail.com" required>
+              <input class="form__input form__input--contact" type="email" name="email" id="form-email" placeholder="kuklachev@gmail.com" required>
               <svg class="form__icon form__icon--mail" role="img" width="20" height="14" aria-hidden="true" focusable="false">
                 <use xlink:href="/img/sprite.svg#icon-mail"></use>
               </svg>
             </li>
-            <li class="form__item form__item--contact">
+            <li class="form__item form__item--contact form__item--contact-phone">
               <label class="form__label" for="form-phone">Телефон:*</label>
-              <input class="form__input" type="number" name="phone" id="form-phone" placeholder="8 (960) 900-60-90" required>
+              <input class="form__input form__input--contact form__input--contact-phone" type="tel" name="phone" id="form-phone" placeholder="8 (960) 900-60-90" required>
               <svg class="form__icon form__icon--phone" role="img" width="20" height="20" aria-hidden="true" focusable="false">
                 <use xlink:href="/img/sprite.svg#icon-phone"></use>
               </svg>
@@ -125,16 +123,16 @@
         </fieldset>
       </div>
       <div class="form__wrapper container">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">
+        <fieldset class="form__fieldset form__fieldset--textarea">
+          <legend class="form__legend form__legend--line">
             Комментарий
           </legend>
           <textarea class="form__textarea form__textarea--height" name="about" id="form-text" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
       </div>
       <div class="form__wrapper container">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">
+        <fieldset class="form__fieldset form__fieldset--add">
+          <legend class="form__legend form__legend--line form__legend--add">
             Дополнительно
           </legend>
           <ul class="form__list form__list--add">
@@ -169,7 +167,7 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form__wrapper form__wrapper--button  container">
+      <div class="form__wrapper form__wrapper--button container">
         <button class="main-button main-button--form" type="submit">
           Отправить заявку
         </button>
@@ -187,43 +185,41 @@
         приглашаем<br> к сотрудничеству<br> дилеров!
       </b>
       <p class="address__info">
-        ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
+        ул. Большая<br> Конюшенная, д. 19/8<br><br class="address__br"> Санкт-Петербург
       </p>
     </div>
     <iframe class="page-footer__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595251621696!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="Наш адрес: г.Санкт-петербург, ул. Большая конюнешенная, д 19/8"></iframe>
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo logo-text" href="index.html" aria-label="Главная страница">
+      <a class="page-footer__logo logo" href="index.html" aria-label="Главная страница">
         <svg role="img" width="128" height="24">
           <use xlink:href="/img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Давайте дружить!</h2>
-        <div class="social__wrapper">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#" aria-label="Подписывайтесь на нас Вконтакте!">
-                <svg class="social__icon" role="img" width="22" height="12" focusable="false">
-                  <use xlink:href="/img/sprite.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="#" aria-label="Подписывайтесь на нас в Инстаграме!">
-                <svg class="social__icon" role="img" width="16.1" height="16" focusable="false">
-                  <use xlink:href="/img/sprite.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#" aria-label="Подписывайтесь на нас в Фейсбуке!">
-                <svg class="social__icon" role="img" width="10" height="19" focusable="false">
-                  <use xlink:href="/img/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Подписывайтесь на нас Вконтакте!">
+              <svg class="social__icon social__icon--vk" role="img" width="22" height="12" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Подписывайтесь на нас в Инстаграме!">
+              <svg class="social__icon social__icon--insta" role="img" width="16.1" height="16" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Подписывайтесь на нас в Фейсбуке!">
+              <svg class="social__icon social__icon--fb" role="img" width="22" height="22" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">

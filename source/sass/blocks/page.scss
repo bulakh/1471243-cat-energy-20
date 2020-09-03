@@ -16,7 +16,7 @@ html {
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  align-content: flex-start;
+  align-content: start;
 
   font-family: $oswald;
   font-style: normal;
@@ -79,4 +79,8 @@ p {
 
 b {
   font-weight: normal;
+}
+
+.page__body {
+  margin: 0;
 }

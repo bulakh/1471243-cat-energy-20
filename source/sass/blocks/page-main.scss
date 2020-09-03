@@ -1,15 +1,51 @@
+.page-main {
+  position: relative;
+}
+
 .page-main__title {
-  margin-bottom: 37px;
+  position: relative;
+
+  margin-bottom: 61px;
+  padding-top: 27px;
 
   font-size: 36px;
   line-height: 36px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 83px;
+    margin-bottom: 164px;
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 164px;
+  }
+}
+
+.page-main__title--catalog::after {
+  content: "";
+
+  position: absolute;
+  bottom: -41px;
+  left: -30px;
+
+  width: 103vw;
+  height: 1px;
+  background-color: $special-grey-7;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-main__title--form {
+  margin-bottom: 38px;
+  margin-left: -1px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -23,6 +59,19 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.page-main__subtitle--form {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -44,8 +93,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6%;
-    margin-bottom: 71px;
+    gap: 6.7%;
+    margin-bottom: 41px;
   }
 }
 
@@ -53,24 +102,36 @@
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 500px;
+    margin-bottom: 589px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 205px;
+    margin-bottom: 128px;
   }
 }
 
 .page-main__example {
   padding-top: 27px;
-  padding-bottom: 39px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 67px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 64px;
+    margin-bottom: -102px;
+  }
+}
+
+.page-main__main-product {
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -87,7 +148,17 @@
 }
 
 .page-main__form {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    padding: 0 42px;
+    padding-right: 35px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
+    margin-left: 2px;
+    padding: 0;
   }
 }

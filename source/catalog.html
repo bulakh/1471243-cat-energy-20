@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--other-page">
     <div class="page-header__wrapper container">
       <div class="page-header__top-wrap">
         <a class="page-header__logo logo" href="index.html" aria-label="Логотип магазина Cat Energy">
@@ -24,27 +24,25 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--black" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active site-list__item--active-other-page">
+            <a class="site-list__link site-list__link--black">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--black" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main class="page-main">
     <div class="page-main__wrapper container">
-      <h1 class="page-main__title">Каталог продукции</h1>
+      <h1 class="page-main__title page-main__title--catalog">Каталог продукции</h1>
       <section class="page-main__main-product main-product">
         <h2 class="visually-hidden">
           Основные товары
@@ -68,9 +66,9 @@
                 <dl class="card-product__list">
                   <div class="card-product__item">
                     <dt class="card-product__property">
-                      Объем
+                      Масса
                     </dt>
-                    <dd class="card-product__value">
+                    <dd class="card-product__value card-product__value--margin">
                       500 г
                     </dd>
                   </div>
@@ -87,12 +85,12 @@
                       Цена
                     </dt>
                     <dd class="card-product__value">
-                      700 Р
+                      700 Р.
                     </dd>
                   </div>
                 </dl>
               </div>
-              <a class="card-product__link main-button main-button--product" href="#" aria-label="Заказать товар">
+              <a class="card-product__link main-button main-button--product" href="buy-product.html" aria-label="Заказать товар">
                 Заказать
               </a>
             </div>
@@ -106,7 +104,7 @@
 
                 <source media="(min-width: 1440px)" srcset="/img/chicken-big-desktop@1x.png 1x, /img/chicken-big-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="/img/chicken-big-tablet@1x.png 1x, /img/chicken-big-tablet@2x.png 2x">
-                <img class="card-product__img card-product__img--big" src="/img/chicken-big-mobile@1x.jpg" srcset="/img/chicken-big-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
+                <img class="card-product__img card-product__img--big card-product__img--big-else" src="/img/chicken-big-mobile@1x.jpg" srcset="/img/chicken-big-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
               </picture>
               <div class="card-product__text">
                 <h3 class="card-product__title">
@@ -115,9 +113,9 @@
                 <dl class="card-product__list">
                   <div class="card-product__item">
                     <dt class="card-product__property">
-                      Объем
+                      Масса
                     </dt>
-                    <dd class="card-product__value">
+                    <dd class="card-product__value card-product__value--margin">
                       1000 г
                     </dd>
                   </div>
@@ -134,12 +132,12 @@
                       Цена
                     </dt>
                     <dd class="card-product__value">
-                      1000 Р
+                      1000 Р.
                     </dd>
                   </div>
                 </dl>
               </div>
-              <a class="card-product__link main-button main-button--product" href="#" aria-label="Заказать товар">
+              <a class="card-product__link main-button main-button--product" href="buy-product.html" aria-label="Заказать товар">
               Заказать
               </a>
             </div>
@@ -153,7 +151,7 @@
 
                 <source media="(min-width: 1440px)" srcset="/img/fish-small-desktop@1x.png 1x, /img/fish-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="/img/fish-small-tablet@1x.png 1x, /img/fish-small-tablet@2x.png 2x">
-                <img class="card-product__img" src="/img/fish-small-mobile@1x.jpg" srcset="/img/fish-small-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
+                <img class="card-product__img card-product__img--small" src="/img/fish-small-mobile@1x.jpg" srcset="/img/fish-small-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
               </picture>
               <div class="card-product__text">
                 <h3 class="card-product__title">
@@ -162,9 +160,9 @@
                 <dl class="card-product__list">
                   <div class="card-product__item">
                     <dt class="card-product__property">
-                      Объем
+                      Масса
                     </dt>
-                    <dd class="card-product__value">
+                    <dd class="card-product__value card-product__value--margin">
                       500 г
                     </dd>
                   </div>
@@ -181,12 +179,12 @@
                       Цена
                     </dt>
                     <dd class="card-product__value">
-                      700 Р
+                      700 Р.
                     </dd>
                   </div>
                 </dl>
               </div>
-              <a class="card-product__link main-button main-button--product" href="#" aria-label="Заказать товар">
+              <a class="card-product__link main-button main-button--product" href="buy-product.html" aria-label="Заказать товар">
               Заказать
               </a>
             </div>
@@ -209,10 +207,10 @@
                 <dl class="card-product__list">
                   <div class="card-product__item">
                     <dt class="card-product__property">
-                      Объем
+                      Масса
                     </dt>
-                    <dd class="card-product__value">
-                      500 г
+                    <dd class="card-product__value card-product__value--margin">
+                      1000 г
                     </dd>
                   </div>
                   <div class="card-product__item">
@@ -228,12 +226,12 @@
                       Цена
                     </dt>
                     <dd class="card-product__value">
-                      1000 Р
+                      1000 Р.
                     </dd>
                   </div>
                 </dl>
               </div>
-              <a class="card-product__link main-button main-button--product" href="#" aria-label="Заказать товар">
+              <a class="card-product__link main-button main-button--product" href="buy-product.html" aria-label="Заказать товар">
               Заказать
               </a>
             </div>
@@ -247,7 +245,7 @@
 
                 <source media="(min-width: 1440px)" srcset="/img/buckwheat-small-desktop@1x.png 1x, /img/buckwheat-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="/img/buckwheat-small-tablet@1x.png 1x, /img/buckwheat-small-tablet@2x.png 2x">
-                <img class="card-product__img" src="/img/buckwheat-small-mobile@1x.jpg" srcset="/img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
+                <img class="card-product__img card-product__img--small" src="/img/buckwheat-small-mobile@1x.jpg" srcset="/img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
               </picture>
               <div class="card-product__text">
                 <h3 class="card-product__title">
@@ -256,9 +254,9 @@
                 <dl class="card-product__list">
                   <div class="card-product__item">
                     <dt class="card-product__property">
-                      Объем
+                      Масса
                     </dt>
-                    <dd class="card-product__value">
+                    <dd class="card-product__value card-product__value--margin">
                       500 г
                     </dd>
                   </div>
@@ -275,12 +273,12 @@
                       Цена
                     </dt>
                     <dd class="card-product__value">
-                      400 Р
+                      400 Р.
                     </dd>
                   </div>
                 </dl>
               </div>
-              <a class="card-product__link main-button main-button--product" href="#" aria-label="Заказать товар">
+              <a class="card-product__link main-button main-button--product" href="buy-product.html" aria-label="Заказать товар">
               Заказать
               </a>
             </div>
@@ -303,9 +301,9 @@
                 <dl class="card-product__list">
                   <div class="card-product__item">
                     <dt class="card-product__property">
-                      Объем
+                      Масса
                     </dt>
-                    <dd class="card-product__value">
+                    <dd class="card-product__value card-product__value--margin">
                       1000 г
                     </dd>
                   </div>
@@ -322,12 +320,12 @@
                       Цена
                     </dt>
                     <dd class="card-product__value">
-                      700 Р
+                      700 Р.
                     </dd>
                   </div>
                 </dl>
               </div>
-              <a class="card-product__link main-button main-button--product" href="#" aria-label="Заказать товар">
+              <a class="card-product__link main-button main-button--product" href="buy-product.html" aria-label="Заказать товар">
               Заказать
               </a>
             </div>
@@ -341,7 +339,7 @@
 
                 <source media="(min-width: 1440px)" srcset="/img/rice-small-desktop@1x.png 1x, /img/rice-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="/img/rice-small-tablet@1x.png 1x, /img/rice-small-tablet@2x.png 2x">
-                <img class="card-product__img" src="/img/rice-small-mobile@1x.jpg" srcset="/img/rice-small-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
+                <img class="card-product__img card-product__img--small" src="/img/rice-small-mobile@1x.jpg" srcset="/img/rice-small-mobile@2x.jpg 2x" width="140" height="112" alt="Кэт энержди с курицей - маленькая">
               </picture>
               <div class="card-product__text">
                 <h3 class="card-product__title">
@@ -350,10 +348,10 @@
                 <dl class="card-product__list">
                   <div class="card-product__item">
                     <dt class="card-product__property">
-                      Объем
+                      Масса
                     </dt>
-                    <dd class="card-product__value">
-                      1000 г
+                    <dd class="card-product__value card-product__value--margin">
+                      500 г
                     </dd>
                   </div>
                   <div class="card-product__item">
@@ -369,30 +367,28 @@
                       Цена
                     </dt>
                     <dd class="card-product__value">
-                      500 Р
+                      500 Р.
                     </dd>
                   </div>
                 </dl>
               </div>
-              <a class="card-product__link main-button main-button--product" href="#" aria-label="Заказать товар">
+              <a class="card-product__link main-button main-button--product" href="buy-product.html" aria-label="Заказать товар">
               Заказать
               </a>
             </div>
           </article>
           <article class="main-product__more-product more-product">
-            <div class="more-product__wrapper">
-              <svg class="more-product__icon" role="img" width="30" height="30" aria-hidden="true" focusable="false">
-                <use class="more-product__plus-mobile" xlink:href="/img/sprite.svg#icon-plus-mobile"></use>
-                <use class="more-product__plus" xlink:href="/img/sprite.svg#icon-plus"></use>
-              </svg>
-              <h3 class="more-product__title">
-                Показать еще<br> 100500 товаров
-              </h3>
-              <p class="more-product__subtitle">
-                На самом деле вкусов гораздо больше!
-              </p>
-              <a class="main-button main-button--more" href="#" aria-label="Показать все товары">Показать все</a>
-            </div>
+            <svg class="more-product__icon" role="img" width="30" height="30" aria-hidden="true" focusable="false">
+              <use class="more-product__plus-mobile" xlink:href="/img/sprite.svg#icon-plus-mobile"></use>
+              <use class="more-product__plus" xlink:href="/img/sprite.svg#icon-plus"></use>
+            </svg>
+            <h3 class="more-product__title">
+              Показать еще 100500 товаров
+            </h3>
+            <p class="more-product__subtitle">
+              На самом деле вкусов гораздо больше!
+            </p>
+            <a class="main-button main-button--more" href="buy-product.html" aria-label="Показать все товары">Показать все</a>
           </article>
         </div>
       </section>
@@ -404,51 +400,43 @@
       </h2>
       <div class="add-product__wrapper">
         <div class="add-product__wrap">
-          <article class="add-product__card-add-product card-add-product">
+          <article class="card-add-product">
             <h3 class="card-add-product__title">Сахарозаменитель</h3>
-            <div class="card-add-product__wrapper">
-              <dl class="card-add-product__list">
-                <dt class="card-add-product__number">1 упаковка (100 г)</dt>
-                <dd class="card-add-product__value">200 Р.</dd>
-              </dl>
-            </div>
-            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="#" aria-label="Заказать товар">
+            <dl class="card-add-product__list">
+              <dt class="card-add-product__number">1 упаковка (100 г)</dt>
+              <dd class="card-add-product__value">200 Р.</dd>
+            </dl>
+            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="buy-product.html" aria-label="Заказать товар">
               Заказать
             </a>
           </article>
-          <article class="add-products__card-add-product card-add-product">
+          <article class="card-add-product card-add-product--padding">
             <h3 class="card-add-product__title">Питьевая вода</h3>
-            <div class="card-add-product__wrapper">
-              <dl class="card-add-product__list">
-                <dt class="card-add-product__number">5 литров</dt>
-                <dd class="card-add-product__value">50 Р.</dd>
-              </dl>
-            </div>
-            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="#" aria-label="Заказать товар">
+            <dl class="card-add-product__list">
+              <dt class="card-add-product__number card-add-product__number--padding">5 литров</dt>
+              <dd class="card-add-product__value card-add-product__value--margin">50 Р.</dd>
+            </dl>
+            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="buy-product.html" aria-label="Заказать товар">
               Заказать
             </a>
           </article>
-          <article class="add-products__card-add-product card-add-product">
+          <article class="card-add-product card-add-product--padding">
             <h3 class="card-add-product__title">Молоко</h3>
-            <div class="card-add-product__wrapper">
-              <dl class="card-add-product__list">
-                <dt class="card-add-product__number">1 литр</dt>
-                <dd class="card-add-product__value">100 Р.</dd>
-              </dl>
-            </div>
-            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="#" aria-label="Заказать товар">
+            <dl class="card-add-product__list">
+              <dt class="card-add-product__number">1 литр</dt>
+              <dd class="card-add-product__value">100 Р.</dd>
+            </dl>
+            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="buy-product.html" aria-label="Заказать товар">
               Заказать
             </a>
           </article>
-          <article class="add-products__card-add-product card-add-product">
+          <article class="card-add-product card-add-product--padding">
             <h3 class="card-add-product__title">Витамины</h3>
-            <div class="card-add-product__wrapper">
-              <dl class="card-add-product__list">
-                <dt class="card-add-product__number">1 упаковка (30 г)</dt>
-                <dd class="card-add-product__value">300 Р.</dd>
-              </dl>
-            </div>
-            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="#" aria-label="Заказать товар">
+            <dl class="card-add-product__list">
+              <dt class="card-add-product__number">1 упаковка (30 г)</dt>
+              <dd class="card-add-product__value">300 Р.</dd>
+            </dl>
+            <a class="card-add-product__link main-button main-button--product main-button--product-add" href="buy-product.html" aria-label="Заказать товар">
               Заказать
             </a>
           </article>
@@ -458,7 +446,7 @@
             <use xlink:href="/img/sprite.svg#icon-present"></use>
           </svg>
           <p class="present__text">
-            Закажите все и получите чехол для кота в подарок!
+            Закажите все<br> и получите чехол для кота в подарок!
           </p>
         </div>
       </div>
@@ -472,43 +460,41 @@
         приглашаем<br> к сотрудничеству<br> дилеров!
       </b>
       <p class="address__info">
-        ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
+        ул. Большая<br> Конюшенная, д. 19/8<br><br class="address__br"> Санкт-Петербург
       </p>
     </div>
     <iframe class="page-footer__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595251621696!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="Наш адрес: г.Санкт-петербург, ул. Большая конюнешенная, д 19/8"></iframe>
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo logo-text" href="index.html" aria-label="Главная страница">
+      <a class="page-footer__logo logo" href="index.html" aria-label="Главная страница">
         <svg role="img" width="128" height="24">
           <use xlink:href="/img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Давайте дружить!</h2>
-        <div class="social__wrapper">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#" aria-label="Подписывайтесь на нас Вконтакте!">
-                <svg class="social__icon" role="img" width="22" height="12" focusable="false">
-                  <use xlink:href="/img/sprite.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="#" aria-label="Подписывайтесь на нас в Инстаграме!">
-                <svg class="social__icon" role="img" width="16.1" height="16" focusable="false">
-                  <use xlink:href="/img/sprite.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#" aria-label="Подписывайтесь на нас в Фейсбуке!">
-                <svg class="social__icon" role="img" width="10" height="19" focusable="false">
-                  <use xlink:href="/img/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Подписывайтесь на нас Вконтакте!">
+              <svg class="social__icon social__icon--vk" role="img" width="22" height="12" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Подписывайтесь на нас в Инстаграме!">
+              <svg class="social__icon social__icon--insta" role="img" width="16.1" height="16" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Подписывайтесь на нас в Фейсбуке!">
+              <svg class="social__icon social__icon--fb" role="img" width="22" height="22" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
