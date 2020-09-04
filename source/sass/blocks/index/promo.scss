@@ -6,12 +6,12 @@
 
   color: $white;
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($basic-green 50%, transparent 50%);
   background-repeat: no-repeat;
   background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient($basic-green 50%, transparent 50%);
   }
 
   @media (min-width: $tablet-width) {
@@ -20,6 +20,7 @@
     color: $black;
 
     background-image: none;
+    background-color: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,21 +28,21 @@
     margin-top: -210px;
     margin-bottom: 82px;
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient($basic-green 100%, transparent);
     background-repeat: no-repeat;
     background-size: 50% 100%;
     background-position: top right;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient($basic-green 100%, transparent);
     }
   }
 }
 
 .promo__wrapper {
   @media (min-width: $tablet-width) {
-    margin-left: auto;
     margin-top: -14px;
+    margin-left: auto;
     padding-left: 117px;
   }
 
@@ -121,10 +122,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    z-index: 1;
     top: 140px;
     left: 228px;
     right: 0;
+    z-index: 1;
 
     width: 552px;
     height: 499px;

@@ -4,7 +4,6 @@ var buttonBefore = document.querySelector('.example__button-before');
 var buttonAfter = document.querySelector('.example__button-after');
 var toggle = document.querySelector('.example__toggle');
 
-
 buttonBefore.addEventListener('click', function() {
   if (catBefore.classList.contains('example__cat-none')) {
     catBefore.classList.remove('example__cat-none');

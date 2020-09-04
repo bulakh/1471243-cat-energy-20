@@ -302,7 +302,11 @@
     outline: 2px solid $special-dark-grey;
   }
 
-  &:required:invalid {
+  &:valid:not(:optional) {
+    outline: 2px solid $basic-green;
+  }
+
+  &:required:invalid:not(:placeholder-shown) {
     outline: 2px solid $status-error;
   }
 }
@@ -359,11 +363,12 @@
   }
 }
 
-.form__input:focus + .form__icon {
+.form__input:focus + .form__icon,
+.form__input:valid + .form__icon {
   fill: $basic-green;
 }
 
-.form__input:required:invalid + .form__icon {
+.form__input:required:invalid:not(:placeholder-shown) + .form__icon {
   fill: $status-error;
 }
 

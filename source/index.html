@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Интернет-магазин функционального питания для котов "Cat Energy"</title>
+  <meta name="description" content="Главная страница интернет-магазина функционального питания для котов Cat Energy. Ваш кот станет стройным уже через месяц.">
+  <title>Интернет-магазин питания для котов "Cat Energy"</title>
   <link href="css/styles.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
@@ -58,7 +59,7 @@
           <source media="(min-width: 768px)" srcset="/img/index-can-tablet@1x.jpg 1x, /img/index-can-tablet@2x.jpg 2x">
           <img class="promo__img" src="/img/index-can-mobile@1x.png" srcset="/img/index-can-mobile@2x.png 2x"  width="280" height="270" alt="Cat Energy Pro с курицей">
         </picture>
-        <a class="promo__button main-button" href="form.html">
+        <a class="promo__button main-button" href="form.html" aria-label="Перейти к странице программы">
           Подобрать программу
         </a>
       </div>
@@ -188,10 +189,10 @@
             <img class="example__thin-cat example__cat-none" src="/img/after-mobile@1x.png" srcset="/img/after-mobile@2x.png 2x" width="311" height="232"  alt="Мой стройный кот">
           </picture>
           <div class="example__buttons">
-            <button class="example__button example__button-before" type="button">
+            <button class="example__button example__button-before" type="button" aria-label="Фото толстого кота">
               Было
             </button>
-            <button class="example__button example__button-after" type="button">
+            <button class="example__button example__button-after" type="button" aria-label="Фото стройного кота">
               Стало
             </button>
             <div class="example__scale">
@@ -215,7 +216,9 @@
         </p>
       </div>
     </div>
-    <iframe class="page-footer__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595251621696!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="Наш адрес: г.Санкт-петербург, ул. Большая конюнешенная, д 19/8"></iframe>
+    <div class="page-footer__map map">
+      <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595251621696!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="Наш адрес: г.Санкт-петербург, ул. Большая конюнешенная, д 19/8"></iframe>
+    </div>
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo logo logo--active" aria-label="Перейти на главную">
         <svg role="img" width="128" height="24">
@@ -234,7 +237,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Подписывайтесь на нас в Инстаграме!">
-              <svg class="social__icon social__icon--insta" role="img" width="16.1" height="16" focusable="false">
+              <svg class="social__icon social__icon--insta" role="img" width="16" height="16" focusable="false">
                 <use xlink:href="/img/sprite.svg#icon-insta"></use>
               </svg>
             </a>

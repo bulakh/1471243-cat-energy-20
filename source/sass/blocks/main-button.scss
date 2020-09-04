@@ -13,11 +13,14 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     min-height: 54px;
-    padding: 0;
-    padding-top: 16px;
+    padding: 17px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px;
   }
 
   &:hover {
@@ -27,11 +30,16 @@
   &:active {
     color: $transparent-3;
   }
+
+  &:focus {
+    outline: 2px solid $black;
+  }
 }
 
 .main-button--more {
-  font-size: 16px;
   width: auto;
+
+  font-size: 16px;
   color: $special-dark-grey;
 
   background-color: $basic-grey;
@@ -105,5 +113,9 @@
     width: 568px;
     margin-right: 81px;
     margin-left: -1px;
+    padding-top: 11px;
+    padding-right: 64px;
+    padding-bottom: 12px;
+    padding-left: 64px;
   }
 }

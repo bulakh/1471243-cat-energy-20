@@ -1,5 +1,29 @@
 .add-product {
   position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+    }
+  }
 }
 
 .add-product__wrapper {
@@ -51,28 +75,5 @@
     width: 33.82%;
     padding-left: 40px;
     margin-left: -40px;
-  }
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 15px;
-    right: 0;
-    z-index: -1;
-
-    width: 90%;
-    height: 2px;
-    background-color: $basic-green;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-
-      width: 100%;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 23px;
-    }
   }
 }
