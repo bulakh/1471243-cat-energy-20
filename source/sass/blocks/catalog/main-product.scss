@@ -8,9 +8,9 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 434px 434px;
+    grid-template-rows: 1fr 1fr;
     column-gap: 80px;
-    row-gap: 140px;
+    row-gap: 142px;
   }
 }
 
