@@ -280,7 +280,6 @@
 .form__input,
 .form__textarea {
   width: 100%;
-  padding: 14px;
 
   font-family: inherit;
   font-size: inherit;
@@ -289,26 +288,6 @@
   color: $special-dark-grey;
 
   border: 1px solid $special-grey-5;
-
-  &::placeholder {
-    color: $special-dark-grey;
-  }
-
-  &:hover {
-    border-color: $special-grey;
-  }
-
-  &:focus {
-    outline: 2px solid $special-dark-grey;
-  }
-
-  &:valid:not(:optional) {
-    outline: 2px solid $basic-green;
-  }
-
-  &:required:invalid:not(:placeholder-shown) {
-    outline: 2px solid $status-error;
-  }
 }
 
 .form__textarea {
@@ -339,6 +318,35 @@
   @media (min-width: $tablet-width) {
     padding: 11px 19px;
   }
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:valid:not(:optional) {
+    outline: 2px solid $basic-green;
+  }
+
+  &:invalid:not(:placeholder-shown):not(:focus) {
+    outline: 2px solid $status-error;
+  }
+
+  &:focus + .form__icon,
+  &:valid + .form__icon {
+    fill: $basic-green;
+  }
+
+  &:invalid:not(:placeholder-shown):not(:focus) + .form__icon {
+    fill: $status-error;
+  }
 }
 
 .form__input--number {
@@ -361,15 +369,6 @@
   @media (min-width: $tablet-width) {
     padding-left: 19px;
   }
-}
-
-.form__input:focus + .form__icon,
-.form__input:valid + .form__icon {
-  fill: $basic-green;
-}
-
-.form__input:required:invalid:not(:placeholder-shown) + .form__icon {
-  fill: $status-error;
 }
 
 .form__text {
