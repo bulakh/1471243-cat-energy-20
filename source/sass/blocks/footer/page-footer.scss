@@ -4,8 +4,12 @@
   background-color: $basic-grey;
 }
 
+.page-footer__background-wrap {
+  background-color: $white;
+}
+
 .page-footer__wrapper {
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +18,10 @@
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     justify-content: space-between;
-    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
   }
 }
 
@@ -25,13 +32,25 @@
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
   }
 }
 
+.page-footer__social {
+  margin-bottom: 22px;
+}
+
 .page-footer__copyright {
-  margin-top: 22px;
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    padding-top: 14px;
+  }
 }

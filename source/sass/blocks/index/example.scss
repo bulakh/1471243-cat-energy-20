@@ -1,18 +1,41 @@
 .example {
+  position: relative;
+
   background-color: $special-grey-4;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+
+      position: absolute;
+      top: -620px;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $special-grey-7;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .example__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    margin-top: -188px;
+    grid-template-columns: 3fr 4fr;
+    margin-top: -163px;
   }
 }
 
 .example__wrap-text {
+  margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
-    margin-top: -585px;
+    margin-top: -603px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,14 +43,18 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0;
+    margin-bottom: 29px;
   }
 }
 
 .example__wrap-info {
+  margin-bottom: 5px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +63,10 @@
 }
 
 .example__wrap-cat {
-  align-self: end;
+  @media (min-width: $desktop-width) {
+    margin-top: -53px;
+    margin-left: 50px;
+  }
 }
 
 .example__title {
@@ -47,7 +77,7 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
 
     font-size: 60px;
     line-height: 60px;
@@ -59,26 +89,32 @@
 }
 
 .example__text {
+  width: 95%;
+  margin-bottom: 26px;
+
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    width: 96%;
+    margin-bottom: 53px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 84%;
     margin-bottom: 69px;
   }
 }
 
 .example__list {
   display: flex;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 18px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 }
 
@@ -86,7 +122,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 9%;
+  margin-right: 11%;
 
   @media (min-width: $tablet-width) {
     margin-right: 42px;
@@ -98,7 +134,7 @@
   justify-content: center;
   align-items: center;
   width: 124px;
-  height: 49px;
+  height: 53px;
 
   font-size: 24px;
   line-height: 24px;
@@ -108,7 +144,7 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 77px;
+    height: 71px;
     margin-bottom: 11px;
 
     font-size: 30px;
@@ -151,8 +187,11 @@
 
   @media (min-width: $tablet-width) {
     width: 194px;
+    margin-top: 8px;
+    margin-right: 2px;
 
     font-size: 20px;
+    line-height: 29px;
     text-align: right;
   }
 
@@ -166,53 +205,123 @@
 
 .example__sum-space {
   @media (min-width: $desktop-width) {
-    margin-right: 63px;
+    margin-right: 59px;
   }
 }
 
 // Cats
 
-.example__fat-cat {
+.example__fat-cat,
+.example__thin-cat {
+  width: 100%;
+  height: 239px;
+  margin-top: -5px;
+
+  object-fit: none;
+
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 626px;
+    height: 509px;
+    margin-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 638px;
+    height: 513px;
+    margin-left: 22px;
+    margin-top: 3px;
   }
 }
 
-.example__thin-cat {
+.example__cat-none {
   display: none;
-
-  @media (min-width: $tablet-width) {
-    width: 630px;
-  }
 }
 
 // Scale and buttons
 
 .example__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  margin-top: 30px;
+  margin-left: 13.4%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+    margin-left: 8.7%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 32px;
+    margin-left: 10.9%;
+  }
 }
 
 .example__button {
+  margin-right: 17px;
+  margin-left: 6px;
+  padding: 0;
+
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 
   background-color: transparent;
   border: none;
+  outline: none;
+
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    height: 32px;
+
     font-size: 20px;
     border-bottom: 1px dotted $transparent-2;
+
+    &:hover {
+      border-style: solid;
+    }
+
+    &:focus {
+      outline: 2px solid $black;
+    }
+
+    &:hover ~ .example__scale .example__toggle {
+      box-shadow:
+        0 2px 4px $transparent,
+        0 0 0 1px $special-grey;
+    }
+
+    &:active {
+      border: none;
+    }
+
+    &:active ~ .example__scale .example__toggle {
+      box-shadow:
+        0 2px 4px $transparent-5,
+        0 0 0 1px $basic-green;
+    }
+  }
+}
+
+.example__button-after {
+  order: 2;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
 .example__scale {
+  position: relative;
+
   display: flex;
   align-items: center;
   width: 35%;
   height: 14px;
+  margin-right: 11px;
   padding: 6px;
 
   background-color: $white;
@@ -221,28 +330,63 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: 67.9%;
     height: 6px;
 
     border: none;
     background-color: $special-grey-10;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .example__toggle {
-  width: 50%;
+  width: 10%;
   height: 6px;
 
   background-color: $basic-green;
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
-    width: 25px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
 
     border-radius: 50%;
-    border: 9px solid $white;
-    box-shadow: 0 1px 3px $transparent;
+    border: 12px solid $white;
+    box-shadow:
+      0 1px 3px $transparent,
+      0 0 0 1px $special-grey;
 
-    transform: translateX(130px);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow:
+        0 2px 4px $transparent,
+        0 0 0 1px $special-grey;
+    }
+
+    &:active {
+      box-shadow:
+        0 2px 4px $transparent-5,
+        0 0 0 1px $basic-green;
+    }
+  }
+}
+
+.example__toggle--after {
+  width: 100%;
+
+  transition-duration: 0.5s;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+
+    width: 32px;
+    height: 32px;
+
+    transition-duration: 0.5s;
   }
 }

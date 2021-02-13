@@ -2,10 +2,12 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
+@import "blocks/general";
 @import "blocks/page";
 @import "blocks/container";
 @import "blocks/page-main";
 @import "blocks/main-button";
+@import "blocks/logo";
 @import "blocks/header/page-header";
 @import "blocks/header/site-list";
 @import "blocks/header/main-nav";
@@ -20,6 +22,8 @@
 @import "blocks/catalog/card-add-product";
 @import "blocks/catalog/present";
 @import "blocks/form/form";
+@import "blocks/form/checkbox";
+@import "blocks/form/radio";
 @import "blocks/footer/page-footer";
 @import "blocks/footer/address";
 @import "blocks/footer/map";

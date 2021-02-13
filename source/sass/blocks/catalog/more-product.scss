@@ -1,7 +1,7 @@
 .more-product {
   position: relative;
 
-  padding: 38px;
+  order: 3;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
@@ -9,12 +9,12 @@
 }
 
 .more-product__icon {
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    margin-bottom: 49px;
+    margin-bottom: 46px;
   }
 }
 
@@ -41,14 +41,37 @@
   color: $special-dark-grey-3;
 
   @media (min-width: $tablet-width) {
+    width: 70%;
+    margin-right: auto;
     margin-bottom: 23px;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
   }
 }
 
 .more-product__subtitle {
   margin-bottom: 21px;
 
+  font-size: 12px;
+  line-height: 16px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
+    width: 70%;
+    margin-right: auto;
+    margin-bottom: 85px;
+    margin-left: auto;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

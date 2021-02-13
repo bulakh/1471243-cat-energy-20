@@ -3,18 +3,26 @@
 
   font-size: 36px;
   line-height: 40px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .function__list {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px;
+    column-gap: 59px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 230px);
-    justify-content: space-between;
+    column-gap: 7.8%;
   }
 }
 
@@ -23,10 +31,11 @@
 
   display: grid;
   grid-template-columns: 60px 1fr;
+  align-items: center;
   gap: 20px;
   min-height: 60px;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   font-family: $arial;
   font-size: 14px;
@@ -37,13 +46,22 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: none;
     grid-template-rows: 80px 1fr;
-    gap: 31px;
-    width: 230px;
+    align-items: start;
+    gap: 32px;
+    width: 249px;
     min-height: 280px;
     margin-bottom: 37px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.function__item--clock br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
@@ -66,7 +84,8 @@
 @media (min-width: $tablet-width) {
   .function__item::after {
     position: absolute;
-    right: 0;
+    right: 4px;
+    top: -39px;
 
     content: "1";
     display: block;
@@ -76,6 +95,11 @@
     font-size: 280px;
     line-height: 280px;
     color: $basic-grey;
+  }
+
+  .function__item:first-child::after {
+    right: 19px;
+    top: -40px;
   }
 
   .function__item:nth-child(2)::after {
@@ -88,5 +112,7 @@
 
   .function__item:nth-child(4)::after {
     content: "4";
+    right: 0;
+    top: -39px;
   }
 }

@@ -13,20 +13,50 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     min-height: 54px;
-    padding: 0;
-    padding-top: 16px;
+    padding: 17px;
 
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px;
+  }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: $transparent-3;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+  }
 }
 
 .main-button--more {
-  font-size: 16px;
   width: auto;
+
+  font-size: 16px;
   color: $special-dark-grey;
 
   background-color: $basic-grey;
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    color: $transparent-4;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
 }
 
 .main-button--product {
@@ -38,7 +68,8 @@
   @media (min-width: $tablet-width) {
     width: auto;
     min-height: 38px;
-    padding-top: 10px;
+    padding-top: 11px;
+    padding-bottom: 8px;
 
     line-height: 20px;
   }
@@ -66,13 +97,25 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    min-height: 52px;
+    margin-right: 62px;
     margin-bottom: 0;
-    margin-right: 61px;
     padding-top: 0;
+    padding-right: 64px;
+    padding-left: 63px;
+
+
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 568px;
     margin-right: 81px;
+    margin-left: -1px;
+    padding-top: 11px;
+    padding-right: 64px;
+    padding-bottom: 12px;
+    padding-left: 64px;
   }
 }
