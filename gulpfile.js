@@ -14,6 +14,7 @@ const svgstore = require("gulp-svgstore");
 const uglify = require("gulp-uglify");
 const pipeline = require("readable-stream").pipeline;
 const del = require("del");
+const ghPages = require('gulp-gh-pages');
 
 
 // Delete
@@ -142,6 +143,15 @@ const imgWebp = () => {
 }
 
 exports.imgWebp = imgWebp;
+
+// Deploy
+
+const deploy = () => {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+};
+
+exports.deploy = deploy;
 
 // Build
 
